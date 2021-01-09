@@ -13,6 +13,8 @@ usersRouter.post('/', async (request, response) => {
       email,
       password,
     })
+    // @ts-expect-error
+    delete user.password;
 
     return response.json(user);
   } catch (err) {
