@@ -30,6 +30,7 @@ usersRouter.post('/', async (request, response) => {
 
 usersRouter.patch('/avatar', ensureAuthenticated, upload.single('avatar'),
   async (request, response) => {
+    console.log(request.file)
     try {
       const updateUserAvatar = new UpdateUserAvatarService();
 
@@ -42,6 +43,7 @@ usersRouter.patch('/avatar', ensureAuthenticated, upload.single('avatar'),
         id: user.id,
         name: user.name,
         email: user.email,
+        avatar: user.avatar,
         created_at: user.created_at,
         updated_at: user.updated_at,
       };
