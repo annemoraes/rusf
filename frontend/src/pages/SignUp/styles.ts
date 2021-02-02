@@ -29,7 +29,7 @@ export const Content = styled.div`
   }
   form {
     margin: 80px 0;
-    width: 380px;
+    width: 480px;
     height: 450px;
     text-align: center;
     background: #fff;
