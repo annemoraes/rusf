@@ -14,7 +14,7 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 5px;
   border: 1px solid #e8ebeb;
   padding: 14px;
-  width: 80%;
+  width: 90%;
 
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 export const Error = styled(Tooltip)`
-  height: 22px;
+  height: 20px;
   margin-left: 16px;
   svg {
     margin: 0;

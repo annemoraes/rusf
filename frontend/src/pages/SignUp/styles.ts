@@ -6,7 +6,8 @@ import signInBackground from '../../assets/event.svg';
 export const Container = styled.div`
   height: 100vh;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Wave = styled.div`
@@ -29,7 +30,7 @@ export const Content = styled.div`
   form {
     margin: 80px 0;
     width: 380px;
-    height: 500px;
+    height: 450px;
     text-align: center;
     background: #fff;
     display: flex;
@@ -39,7 +40,7 @@ export const Content = styled.div`
     border-radius: 5px;
 
     h1 {
-      margin-bottom: 24px;
+      margin-bottom: 18px;
       color: #244274;
     }
 

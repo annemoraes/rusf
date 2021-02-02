@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
+
   span {
     width: 160px;
     background: #00ccbc;
@@ -17,6 +18,7 @@ export const Container = styled.div`
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
+
     &::before {
       content: '';
       border-style: solid;
