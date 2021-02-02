@@ -1,14 +1,15 @@
 import React from 'react';
 import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 
-import { Container, Content } from './styles';
+import { Container, Content, Wave, BackgroundImg } from './styles';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
+
+import WaveImg from '../../assets/wave.svg';
 
 const SignIn: React.FC = () => (
   <Container>
     <Content>
-
       <form>
         <h1>Faça seu Login</h1>
 
@@ -23,6 +24,7 @@ const SignIn: React.FC = () => (
         </a>
       </form>
     </Content>
+    <BackgroundImg />
   </Container>
 );
 

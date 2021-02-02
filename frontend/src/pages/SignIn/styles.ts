@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
+import signInBackground from '../../assets/event.svg';
+
 export const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: stretch;
+`;
+
+export const Wave = styled.div`
+  z-index: -5;
+  display: flex;
+  margin-top: 0;
 `;
 
 export const Content = styled.div`
@@ -13,7 +21,7 @@ export const Content = styled.div`
   align-items: center;
   place-content: center;
   width: 100%;
-  max-width: 630px;
+  max-width: 730px;
 
   img {
     padding-top: 15px;
@@ -55,4 +63,9 @@ export const Content = styled.div`
   }
 `;
 
+export const BackgroundImg = styled.div`
+  flex: 1;
+  background: url(${signInBackground}) no-repeat center;
+  background-size: cover;
+`;
 
